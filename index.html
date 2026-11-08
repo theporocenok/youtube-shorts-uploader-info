@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Локальный инструмент для загрузки четырёх коротких видео и назначения расписания через YouTube Data API.">
+  <title>YouTube Shorts Uploader</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header><a class="brand" href="index.html">YouTube Shorts Uploader</a><nav aria-label="Навигация"><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a></nav></header>
+  <main>
+    <p class="eyebrow">Локальное приложение для Windows</p>
+    <h1>Четыре ролика.<br>Одно расписание.</h1>
+    <p class="lead">YouTube Shorts Uploader загружает выбранные видео в ваш YouTube-канал через официальный API и задаёт даты публикации. Скрипт запускается на вашем компьютере.</p>
+    <section aria-labelledby="workflow"><h2 id="workflow">Как это работает</h2>
+      <ol class="steps">
+        <li><strong>Подготовьте папку.</strong> Четыре ролика P1–P4, текстовый файл с общими названием и описанием, первой датой публикации. Можно добавить общую обложку.</li>
+        <li><strong>Разрешите доступ.</strong> Вход проходит на странице Google в вашем браузере. Приложение не запрашивает пароль или коды подтверждения.</li>
+        <li><strong>Запустите загрузку.</strong> Видео загружаются с закрытым доступом. После обработки и установки обложек скрипт назначает расписание и проверяет сохранённые даты.</li>
+      </ol>
+    </section>
+    <section class="note" aria-labelledby="schedule"><h2 id="schedule">Время по Москве, UTC+3</h2><p>Первый ролик — в указанную дату. Второй — через сутки, третий — через двое суток, четвёртый — через четверо суток. После сохранения расписания публикацией управляет YouTube.</p></section>
+    <section aria-labelledby="access"><h2 id="access">Доступ к вашему каналу</h2><p>Приложение читает сведения о канале и состоянии видео, загружает видео и обложки, изменяет описание и параметры публикации. Используется разрешение <code>youtube.force-ssl</code>; оно шире этих функций и позволяет также управлять комментариями, но приложение не реализует работу с комментариями или удаление видео.</p><p>Авторизационные данные сохраняются на компьютере. Подробности о хранении и отзыве доступа — в <a href="privacy.html">политике конфиденциальности</a>.</p></section>
+    <section aria-labelledby="about"><h2 id="about">О приложении</h2><p>Личный инструмент, поддерживаемый <a href="https://github.com/theporocenok">theporocenok</a>. Этот сайт содержит справочную информацию; загрузка видео выполняется локальным скриптом. Вопросы можно оставить в <a href="https://github.com/theporocenok/youtube-shorts-uploader-info/issues">репозитории страниц</a>, не прикладывая секреты или материалы аккаунта.</p><p>Приложение использует YouTube API Services и не является продуктом Google или YouTube. Действуют <a href="terms.html">условия использования</a>.</p></section>
+  </main>
+  <footer><span>YouTube Shorts Uploader · 2026</span><a href="privacy.html">Политика конфиденциальности</a><a href="terms.html">Условия использования</a></footer>
+</body>
+</html>
